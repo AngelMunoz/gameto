@@ -1,0 +1,32 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gameto", "Gameto.csproj", "{BB276572-9B5E-4240-B5F6-30F759A43B46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{183234E7-672D-4FEA-BB6D-1DA6EB290DCA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gameto.Lib", "src\Gameto.Lib\Gameto.Lib.fsproj", "{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB276572-9B5E-4240-B5F6-30F759A43B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB276572-9B5E-4240-B5F6-30F759A43B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB276572-9B5E-4240-B5F6-30F759A43B46}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{BB276572-9B5E-4240-B5F6-30F759A43B46}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{BB276572-9B5E-4240-B5F6-30F759A43B46}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{BB276572-9B5E-4240-B5F6-30F759A43B46}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B06224A-3D31-4F2C-B8D8-3B3E4C0DE85A} = {183234E7-672D-4FEA-BB6D-1DA6EB290DCA}
+	EndGlobalSection
+EndGlobal

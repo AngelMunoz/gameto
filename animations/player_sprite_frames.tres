@@ -1,0 +1,96 @@
+[gd_resource type="SpriteFrames" load_steps=12 format=3 uid="uid://dtvnhjswl2nrv"]
+
+[ext_resource type="Texture2D" uid="uid://dp46vw4skh63a" path="res://art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_et0y6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fftrd"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(112, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y63h"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(160, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnngq"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(16, 112, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wn2k5"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(112, 112, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy52f"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(160, 112, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7ajn"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(16, 160, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kb3q"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(112, 160, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t80dv"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(160, 160, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkrsc"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(112, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i71c"]
+atlas = ExtResource("1_et0y6")
+region = Rect2(160, 64, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fftrd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1y63h")
+}],
+"loop": true,
+"name": &"walking_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnngq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wn2k5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy52f")
+}],
+"loop": true,
+"name": &"walking_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7ajn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kb3q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t80dv")
+}],
+"loop": true,
+"name": &"walking_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vkrsc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i71c")
+}],
+"loop": true,
+"name": &"walking_up",
+"speed": 5.0
+}]
