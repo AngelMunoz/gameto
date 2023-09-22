@@ -2,6 +2,7 @@ using Godot;
 using System;
 using Gameto.Lib.Types;
 
+namespace Gameto;
 public partial class World : Node
 {
 	private TileMap? Map { get; set; }
