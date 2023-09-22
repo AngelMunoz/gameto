@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=30 format=3 uid="uid://bup0le6rf0sm0"]
+[gd_resource type="TileSet" load_steps=34 format=3 uid="uid://bup0le6rf0sm0"]
 
 [ext_resource type="Texture2D" uid="uid://cafhesdagno2" path="res://art/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png" id="1_1q3rf"]
 [ext_resource type="Texture2D" uid="uid://maiqxynu7uve" path="res://art/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants.png" id="2_bcjvk"]
@@ -17,6 +17,18 @@
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_mcgi3"]
 tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 131072, 0, 1, 196608, 0, 2)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_g3a4x"]
+tile_data = PackedInt32Array(0, 262152, 6, 65536, 262152, 7, 1, 327688, 6, 65537, 327688, 7)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_p85dn"]
+tile_data = PackedInt32Array(0, 65544, 3, 65536, 65544, 4, 131072, 65544, 5, 1, 131080, 3, 65537, 131080, 4, 131073, 131080, 5, 2, 196616, 3, 65538, 196616, 4, 131074, 196616, 5)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_m813k"]
+tile_data = PackedInt32Array(0, 8, 2, 65536, 8, 3, 131072, 8, 4, 196608, 8, 5)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_p5nkm"]
+tile_data = PackedInt32Array(0, 327696, 0, 1, 393232, 0)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i6us7"]
 texture = ExtResource("1_1q3rf")
@@ -508,3 +520,7 @@ sources/13 = SubResource("TileSetAtlasSource_c531n")
 sources/15 = SubResource("TileSetAtlasSource_0jf4e")
 sources/16 = SubResource("TileSetAtlasSource_oilkm")
 pattern_0 = SubResource("TileMapPattern_mcgi3")
+pattern_1 = SubResource("TileMapPattern_g3a4x")
+pattern_2 = SubResource("TileMapPattern_p85dn")
+pattern_3 = SubResource("TileMapPattern_m813k")
+pattern_4 = SubResource("TileMapPattern_p5nkm")
