@@ -6,49 +6,63 @@ using Gameto.Lib.Extensions;
 using System.Threading.Tasks.Dataflow;
 using System.Diagnostics;
 
+namespace Gameto;
+
 public partial class PlayerController : CharacterBody2D
 {
 	[Export]
 	public float Speed { get; set; } = 50f; // How fast the player will move (pixels/sec).
 
-	private Vector2? _target = null;
-	private AnimatedSprite2D? _animatedSprite = null;
+	private Vector2? mouseTarget = null;
+	private AnimatedSprite2D? playerSprite = null;
+
+	private bool isRunning = false;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		Say.hello("From Godot + F#");
-		_animatedSprite = GetNode<AnimatedSprite2D>("Movements");
+		playerSprite = GetNode<AnimatedSprite2D>("Movements");
 	}
 
 	public override void _Input(InputEvent @event)
 	{
 		if (@event.IsActionPressed("click"))
 		{
-			_target = GetGlobalMousePosition();
+			mouseTarget = GetGlobalMousePosition();
 		}
 
 		if (@event.IsMovingWithKeyboard())
 		{
-			_target = null;
+			mouseTarget = null;
+		}
+
+		if (@event.IsActionPressed("run"))
+		{
+			isRunning = true;
+		}
+		else if (@event.IsActionReleased("run"))
+		{
+			isRunning = false;
 		}
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		PlayerMovement.animateKeyboardMovement(_animatedSprite.ToOption());
+		Player.AnimateKeyboardMovement(playerSprite.ToOption());
 	}
 
 	public override void _PhysicsProcess(double delta)
 	{
-		if (_target is null || Position.DistanceTo(_target.Value) < 10)
+		var speed = isRunning ? Speed * 2 : Speed;
+		if (mouseTarget is null || Position.DistanceTo(mouseTarget.Value) < 10)
 		{
-			PlayerMovement.moveWithKeyboard(this, Speed);
-			_target = null;
+			Player.MoveWithKeyboard(this, speed);
+			mouseTarget = null;
 			return;
 		}
 
-		PlayerMovement.moveWithMouse(this, _target.Value, Speed);
+
+		Player.MoveWithMouse(this, mouseTarget.Value, speed);
 	}
 }
